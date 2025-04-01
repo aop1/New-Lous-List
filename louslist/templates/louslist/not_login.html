@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans "New Lou\'s List" %}
+{% endblock head_title %}
+
+{% block content %}
+        <div class="d-flex align-items-center justify-content-center vh-100">
+            <div class="text-center">
+                <h1 class="display-1 fw-bold">Must Log In</h1>
+                <p class="fs-3"> <span class="text-danger">Oops!</span> You have to be logged in to access that.</p>
+                        <div class="sign-in me-3">
+
+            <form class="my-0" action="{% url 'google_login' %}?action=reauthenticate" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn w-177 h-40 p-0">
+                    <img src="https://iili.io/HCvOi5x.png" alt="google-sign-in" width="177" height="40" />
+                </button>
+            </form>
+
+{% endblock %}
+

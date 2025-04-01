@@ -1,0 +1,54 @@
+[
+    {
+        "model": "louslist.Schedule",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "semester": 1228,
+            "name": "Private Schedule User 2",
+            "color": "#FF0000",
+            "classes": [],
+            "date_created": "2011-09-01T13:20:30+03:00",
+            "is_private": "1"
+        }
+    },
+    {
+        "model": "louslist.Schedule",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "semester": 1228,
+            "name": "Public Schedule User 1",
+            "color": "#FF0000",
+            "classes": [],
+            "date_created": "2011-09-01T13:20:30+03:00",
+            "is_private": "3"
+        }
+    },
+    {
+        "model": "louslist.Schedule",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "semester": 1228,
+            "name": "Public to Friends Schedule User 1",
+            "color": "#FF0000",
+            "classes": [],
+            "date_created": "2011-09-01T13:20:30+03:00",
+            "is_private": "2"
+        }
+    },
+    {
+        "model": "louslist.Schedule",
+        "pk": 4,
+        "fields": {
+            "user": 1,
+            "semester": 1228,
+            "name": "Private Schedule User 1",
+            "color": "#FF0000",
+            "classes": [],
+            "date_created": "2011-09-01T13:20:30+03:00",
+            "is_private": "1"
+        }
+    }
+]

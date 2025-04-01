@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% load i18n %}
+{%block content%}
+{% include 'louslist/social-pageBase.html' %}
+{% load static %}
+<!--sidebar-->
+
+<head>
+    <link rel="stylesheet" href="{% static 'louslist/socialBar.css' %}" />
+    {% block head_content %}
+      <script src="{% static 'louslist/js/dashboard.js' %}"></script>
+    {% endblock %}
+
+</head>
+
+<div style = "position:absolute; right:1100px; top:100px;">
+{% with "https://iili.io/"|add:user.profile_pic  as img_url %}
+                        <img src="{{img_url}}" class="d-block me-2" alt-text="profile-image-{{user.username}}" width="200px" height=200px" />
+{% endwith %}
+<div class ="card-holder" style = "position:absolute; right:3px; top:200px; background:white;">
+  <div class="card mb-4 border-0" style="width: 13rem;">
+    <div class="card-body align-items-center d-flex justify-content-center " >
+      <h5 class = "user-name"><a href = "/account-settings/"><b>Profile Settings</b></a></h5>
+    </div>
+  </div>
+<div class ="card-holder" style="background:white;">
+<div class="card mb-4 border-0" style="width: 13rem;">
+  <div class="card-body align-items-center" >
+    <div>
+      <div class="shadow card" style="width: 13rem;">
+          <div class="card-body">
+              <h5 class="card-title">Classes in Your Cart</h5>
+              <!-- if the cart is empty, display no classes message -->
+              {% if not user.cart.first %}
+              <p class="card-text">You haven't added any classes </p>
+              {% else %}
+              <!-- create a modal for each unique course in unique cart -->
+              {% for unique_course in unique_cart %}
+              <!-- Modal -->
+              <div class="modal fade" id="id-{{unique_course.id}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel-{{unique_course.id}}" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalLabel-{{unique_course.id}}">{{unique_course.subject}} {{unique_course.catalog_number}}: {{unique_course.description}}</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- for each course in users cart -->
+                      {% for course in cart %}
+                        <!-- only display if course matches the unique course description and subject -->
+                        {% if course.description == unique_course.description and course.subject == unique_course.subject and course.catalog_number == unique_course.catalog_number%}
+
+                        <p>{{course.course_section}}-{{course.component}} ({{course.course_number}}) with {{course.instructor}}</p>
+                            <input type="hidden" value="{{course.course_number}}" class="{{course.subject}}-{{course.catalog_number}}">
+                          <!-- Display each meeting for the specific class section -->
+                            {% for meeting in course.meetings %}
+                            <!-- Format with location, days and time on the line below -->
+                            {{meeting.facility_description}}
+                            <p style="text-align:left;">
+                                {{meeting.days}}
+                                {{meeting.start_time}} - {{meeting.end_time}}
+                            </p>
+                            {% endfor %}
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                  <!-- Remove Class button -->
+
+                  <p class="me-3 mb-0 w-50">{{unique_course.subject}} {{unique_course.catalog_number}}: {{unique_course.description}}</p>
+                  <!-- Button trigger modal for each unique class -->
+                  <button type="button" class="btn btn-primary btn-sm me-2 ms-auto" data-bs-toggle="modal" data-bs-target="#id-{{unique_course.id}}">
+                    Details
+                  </button>
+                  <button id="remove-{{unique_course.subject}}-{{unique_course.catalog_number}}" class="btn btn-outline-danger btn-sm me-1" onclick="removeClassCart('{{unique_course.subject}}', '{{unique_course.catalog_number}}');">
+                      Remove
+                      <i class="bi bi-trash3"></i>
+                  </button>
+              </div>
+              {% endfor %}
+              {% endif %}
+          </div>
+      </div>
+  </div>
+    {% for courses in user.cart.all%}
+    <p class="card-text" style="color:green;">{{courses.subject}} {{courses.catalog_number}} ({{courses.course_section}})</p>
+    {% endfor %}
+
+  </div>
+</div>
+</div>
+</div>
+    </div>
+
+
+      
+
+
+<!--sidebar-end -->
+
+<br>
+<br>
+<br>
+<div class = "class-feed">
+<ul class="list-group">
+ {%if not all_schedule%}
+  <li class="list-group-item">
+      <div class="col d-flex justify-content-center" >
+
+  <div class="card-body">
+    <p class="card-text" style = "text-align:center;">There Are Currently No New Posts</p>
+  </div>
+</div>
+  </li>
+    {% endif %}
+    {% for item in all_schedule%}
+  <li class="list-group-item">
+      <div class="col d-flex justify-content-center">
+<div class="card">
+  <h5 class="card-header">New Post from <a style="color:white;" href = "user/{{item.user}}/"><b>{{item.user}}</b></a><br>on {{item.date_created}}</h5>
+  <div style = "position:relative; left:550px; bottom:50px; display: block;">
+  {% with "https://iili.io/"|add:item.user.profile_pic as img_url %}
+                        <img src="{{img_url}}" class="d-flex justify-content-end" alt-text="profile-image-{{user.username}}" width="40px" height=40px" />
+  {% endwith %}
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+      {% for courses in item.classes.all%}
+      {% if courses in user.cart.all %}
+        <p class="card-text" style="color:green;">{{courses.subject}} {{courses.catalog_number}}: {{courses.description}} ({{courses.instructor}}) {{courses.course_section}} </p>
+      {% else %}
+        <p class="card-text"> {{courses.subject}} {{courses.catalog_number}}: {{courses.description}} ({{courses.instructor}}) {{courses.course_section}} </p>
+      {% endif %}
+      {%endfor%}
+    <a href="{%url 'view-schedule' item.id %}" class="btn btn-primary">View Complete Schedule</a>
+  </div>
+    </div>
+</div>
+  </li>
+    <br>
+    {%endfor%}
+</ul>
+</div>
+
+
+
+
+
+
+{%endblock%}

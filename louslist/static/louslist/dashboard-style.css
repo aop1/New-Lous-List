@@ -1,0 +1,12 @@
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 1px solid #bbb;
+}

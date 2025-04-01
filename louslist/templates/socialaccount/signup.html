@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}Sign Up{% endblock %}
+
+{% block content %}
+
+<div class="signup-form mt-2 d-flex flex-column">
+  <div class="mb-2 justify-content-center">
+    <h1 class="fs-3">{% trans "Sign Up" %}</h1>
+
+    {% blocktrans with provider_name=account.get_provider.name %}
+    <p>You are about to use your
+      {{provider_name}} account to login to
+      New Lou's List. As a final step, please complete the following form:</p>
+    {% endblocktrans %}
+  </div>
+
+  <form class="signup" id="signup_form" method="post" action="{% url 'socialaccount_signup' %}">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="mb-3">
+      {{ form.username.errors }}
+      <label class="form-label" for="{{ form.username.id_for_label }}">{{ form.username.label }}:</label>
+      {{ form.username }}
+    </div>
+    
+    <div class="mb-3">
+      {{ form.email.errors }}
+      <label class="form-label" for="{{ form.email.id_for_label }}"> E-mail: </label>
+      {{ form.email }}
+    </div>
+
+    <div class="d-flex flex-row mb-3">
+      <div class="me-3">
+        {{ form.first_name.errors }}
+        <label class="form-label" for="{{ form.first_name.id_for_label }}">{{ form.first_name.label }}:</label>
+        {{ form.first_name }}
+      </div>
+      <div>
+        {{ form.last_name.errors }}
+        <label class="form-label" for="{{ form.last_name.id_for_label }}">{{ form.last_name.label }}:</label>
+        {{ form.last_name }}
+      </div>
+    </div>
+
+    {% if redirect_field_value %}
+    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+    <div class="mb-3">
+      <button type="submit" class="btn btn-primary bg-color-light">
+        {% trans "Sign Up" %} &raquo;
+      </button>
+    </div>
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans title %}{% endblock head_title %} 
+{% load static %}
+{% load json %}
+{% load meeting_display %}
+
+{% block head_content %}
+    <script src="{% static 'louslist/js/search-results.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+
+<div class="search-results w-90vw">
+    <span id="csrf-token">
+        {% csrf_token %}
+    </span>
+
+    <h2 class="fs-3 mb-3">Search Results</h2>
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-bottom: 20px;">
+        View Color Key
+    </button>
+    <!-- Color Key Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Color Key</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <td><i style="color:greenyellow"class="bi bi-circle-fill"></i></td> <p>The class has many open seats or is empty.</p> <br>
+                    <td><i style="color:yellow"class="bi bi-circle-fill"></i></td> <p>The class has a moderate amount of open seats.</p> <br>
+                    <td><i style="color:orange"class="bi bi-circle-fill"></i></td> <p>The class has very few open seats; hurry!</p> <br>
+                    <td><i style="color:red"class="bi bi-circle-fill"></i></td> <p>The class is full or over capacity.</p> <br>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    {% if error_message %}
+        <div class="alert alert-danger" role="alert">
+            {{error_message}}
+            {% if filters %}
+                <ul>
+                    {% for filter in filters %}
+                    <li>{{ filter }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    <div class="courses">
+        {% for number, courses in courses_by_number.items %}
+            <div class="d-flex flex-row mb-0 flex-grow-1">
+                <p class="bg-color-primary fw-bold fs-4 mb-0 text-white d-inline w-25 p-3">{{number}}</p>
+                <p class="bg-color-orange fw-bold fs-4 mb-0 d-inline p-3 w-75">{{courses.0.description}}</p>
+            </div>
+            <table class="table mb-0 bg-light">
+            {% for course in courses %}
+                {% if course.topic %}
+                <tbody class="table bg-color-light">
+                    <tr>
+                        <th scope="row" colspan="8" style="color: #fff">{{course.topic}}</th>
+                    </tr>
+                </tbody>
+                {% endif %}
+                <tbody class="table bg-light">
+                        <tr>
+                            <th scope="row" class="course-number {{course.subject}}-{{course.catalog_number}}" data-course="{% to_json course%}">{{course.course_number}} </th>
+                            <td class="section-number">{{course.course_section}}</td>
+                            <td class="section-type">{{course.component}} ({{course.units}} units)</td>
+                            <td><i style="color:{{course.color}}"class="bi bi-circle-fill"></i></td>
+                            <td>{{course.enrollment_total}}/{{course.class_capacity}} filled</td>
+                            <td>{{course.instructor.name}}</td>
+                            <td>{% time_str course.days course.start_time course.end_time %}</td>
+                            <td>{{ course.facility_description|location }}</td>
+                        </tr>
+                </tbody>
+                {% for meeting in course.meetings %}
+                    <tbody class="table bg-light">
+                        <tr>
+                            <th scope="row" class="course-number"></th>
+                            <td class="section-number"></td>
+                            <td class="section-type"></td>
+                            <td><i></i></td>
+                            <td></td>
+                            <td>{{course.instructor.name}}</td>
+                            <td>{% time_str meeting.days meeting.start_time meeting.end_time %}</td>
+                            <td>{{ meeting.facility_description|location }}</td>
+                        </tr>
+                    </tbody>
+                {% endfor %}
+            {% endfor %}
+            </table>
+            <div class="card bg-light mt-0 mb-4 border-top-0">
+                <div class="card-body">
+                    {% if user.is_authenticated %}
+                        <span id="cartbtn-{{courses.0.subject}}-{{courses.0.catalog_number}}">
+                                <button id="add-{{courses.0.subject}}-{{courses.0.catalog_number}}" onclick="addClassToCart('{{courses.0.subject}}', '{{courses.0.catalog_number}}');" class="btn btn-outline-success me-1 {%if courses.0.course_number in courses_in_cart%} d-none {% endif %}">
+                                    <i class="bi bi-cart-check-fill"></i>
+                                    Add to Cart
+                                </button>
+                                <button id="remove-{{courses.0.subject}}-{{courses.0.catalog_number}}" class="btn btn-outline-danger me-1 {%if courses.0.course_number not in courses_in_cart%} d-none {% endif %}" onclick="removeClassFromCart('{{courses.0.subject}}', '{{courses.0.catalog_number}}');">
+                                    <i class="bi bi-trash3"></i>
+                                    Remove from Cart
+                                </button>
+                        </span>
+                        
+                    {% endif %}
+                    <button class="btn btn-outline-primary me-1" onclick="window.open('https://thecourseforum.com/course/{{courses.0.subject}}/{{courses.0.catalog_number}}',' _blank');">
+                        <i class="bi bi-chat-left-text"></i>
+                        See Course Reviews
+                    </button>
+                    <button class="btn btn-outline-primary" onclick="window.open('https://vagrades.com/uva/{{courses.0.subject}}{{courses.0.catalog_number}}',' _blank');">
+                        <i class="bi bi-check-circle-fill"></i>
+                        See Grades
+                    </button>
+                </div>
+            </div>
+        {% endfor %}
+        <div id="toast-container" class="position-fixed bottom-0 end-0 p-3">
+            <div class="toast" id="success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

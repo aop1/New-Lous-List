@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans 'Departments' %}{% endblock head_title %}
+{% block content %}
+
+<h2 class="fs-3 mb-3">{% trans "Browse by Department" %}</h2>
+
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+      aria-expanded="false" aria-controls="collapseTwo">
+      College of Arts and Sciences
+    </button>
+  </h2>
+  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+    data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="list-group mt-3">
+        <ul class="" style="column-count: 2;">
+          {% for choice in all_dept %}
+            {% if choice.school == "Arts & Sciences Departments" %}
+              <a href="{% url 'department' choice.dep_name %}" class="d-block text-decoration-none">
+                {{choice.dep_name}}
+              </a>
+            {%endif%}
+          {% endfor%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+      aria-expanded="false" aria-controls="collapseTwo">
+      Arts & Sciences Programs, Seminars, and Institutes
+    </button>
+  </h2>
+  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+    data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="list-group">
+        <ul class="list-unstyled card-columns" style="column-count: 2;">
+          {% for choice in all_dept %}
+          {% if choice.school == "Arts & Sciences Programs, Seminars, and Institutes" %}
+          <a href="{% url 'department' choice.dep_name %}" class="d-block text-decoration-none">
+            {{choice.dep_name}}
+          </a>
+          {%endif%}
+          {% endfor%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFour">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+      aria-expanded="false" aria-controls="collapseTwo">
+      Engineering & Applied Sciences Departments
+    </button>
+  </h2>
+  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+    data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="list-group">
+        <ul class="list-unstyled card-columns" style="column-count: 2;">
+          {% for choice in all_dept %}
+          {% if choice.school == "Engineering & Applied Sciences Departments" %}
+          <a href="{% url 'department' choice.dep_name %}" class="d-block text-decoration-none">
+            {{choice.dep_name}}
+          </a>
+          {%endif%}
+          {% endfor%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingFive">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+      aria-expanded="false" aria-controls="collapseTwo">
+      School of Education and Human Development Departments
+    </button>
+  </h2>
+  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+    data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="list-group">
+        <ul class="list-unstyled card-columns" style="column-count: 2;">
+          {% for choice in all_dept %}
+          {% if choice.school == "School of Education and Human Development Departments " %}
+          <a href="{% url 'department' choice.dep_name %}" class="d-block text-decoration-none">
+            {{choice.dep_name}}
+          </a>
+          {%endif%}
+          {% endfor%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingSix">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+      aria-expanded="false" aria-controls="collapseTwo">
+      Other Schools at University of Virginia
+    </button>
+  </h2>
+  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+    data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="list-group">
+        <ul class="list-unstyled card-columns" style="column-count: 2;">
+          {% for choice in all_dept %}
+          {% if choice.school == "Other Schools at the University of Virginia"%}
+          {% if choice.dep_name != ""%}
+          <a href="{% url 'department' choice.dep_name %}" class="d-block text-decoration-none">
+            {{choice.dep_name}}
+          </a>
+          {%endif%}
+          {%endif%}
+
+          {% endfor%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion-item">
+  <h2 class="accordion-header" id="headingSeven">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+      aria-expanded="false" aria-controls="collapseTwo">
+      Other Programs, Seminars, and Institutes
+    </button>
+  </h2>
+  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+    data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <div class="list-group">
+        <ul class="list-unstyled card-columns" style="column-count: 2;">
+          {% for choice in all_dept %}
+          {% if choice.school == "Other Programs, Seminars, and Institutes"%}
+          {% if choice.dep_name != ""%}
+          <a href="{% url 'department' choice.dep_name %}" class="d-block text-decoration-none">
+            {{choice.dep_name}}
+          </a>
+          {%endif%}
+          {%endif%}
+
+          {% endfor%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

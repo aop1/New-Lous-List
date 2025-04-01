@@ -1,0 +1,255 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans "New Lou\'s List" %}
+{% endblock head_title %}
+
+{% block head_content %}
+
+<style>
+    /* Carousel styling */
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+    height: 100vh;
+    }
+
+    .carousel-item:nth-child(1) {
+    background-image: url('https://media.istockphoto.com/photos/the-rotunda-at-the-university-of-virginia-built-in-1826-at-the-public-picture-id1346561862?k=20&m=1346561862&s=612x612&w=0&h=YzMwIdnAnUSR4rJYdYQ8kX6T1Lp0B1jBbmcge_Kbnjg=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    }
+
+    #introCarousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item.active {
+        height: 100vh;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+
+<!--Main Navigation-->
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        </ol>
+
+        <!-- Inner -->
+        <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white text-center">
+                <h1 class="mb-3">Welcome to New Lou's List</h1>
+                <h5 class="mb-4">Everything you need to build the perfect schedule</h5>
+                <!-- Can connect links to buttons below using href="link" -->
+                <a
+                    class="btn btn-outline-light btn-lg m-2"
+                    role="button"
+                    rel="nofollow"
+                    href="{% url 'advS' %}"
+
+                    >Class Lookup </a
+                >
+                <a
+                    class="btn btn-outline-light btn-lg m-2"
+                    href = "{% url 'schedule-builder'%}"
+                    role="button"
+
+                    >Schedule Builder</a
+                >
+                <a
+                    class="btn btn-outline-light btn-lg m-2"
+                    href = "{% url 'socialpage'%}"
+                    role="button"
+
+                    >Find Friends</a
+                >
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        </div>
+        <!-- Inner -->
+
+        <!-- Controls
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+        </a> -->
+
+    </div>
+    <!-- Carousel wrapper -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mt-5">
+    <div class="container">
+        
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+        <section class="text-center">
+        <h4 class="mb-5"><strong>Our Features</strong></h4>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                    src="https://cdn.pixabay.com/photo/2016/11/21/00/26/philatelist-1844080_1280.jpg"
+                    class="img-fluid"
+                />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                </div>
+                <div class="card-body">
+                <h5 class="card-title">Search for Courses</h5>
+                <p class="card-text">
+                    Filter classes based on a number of criteria, inculding course title, mnemonic, department, time, and availability.
+                </p>
+                <a href="{% url 'advS' %}" class="btn btn-primary">Advanced Search</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                    src="https://cdn.pixabay.com/photo/2015/07/28/22/04/female-865110__480.jpg"
+                    class="img-fluid"
+                />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                </div>
+                <div class="card-body">
+                <h5 class="card-title">Build Your Schedule</h5>
+                <p class="card-text">
+                    Use New Lou's List's advanced tools to hand-craft the perfect schedule based on courses you are interested in.
+                </p>
+                <a href="{% url 'schedule-builder' %}" class="btn btn-primary">Schedule Builder</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                    src="https://live.staticflickr.com/8224/29711045070_c6f6d55be3_b.jpg"
+                    class="img-fluid"
+                />
+                <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+                </div>
+                <div class="card-body">
+                <h5 class="card-title">Compare Schedules with Friends</h5>
+                <p class="card-text">
+                    Share and compare your schedules with friends to make sure you and your study buddies are all together!
+                </p>
+                <a href="{% url 'socialpage' %}" class="btn btn-primary">Visit Friends Page</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!--Section: Content-->
+
+        <hr class="my-5" />
+
+        <!--Section: Content-->
+    <!--
+        <section class="mb-5">
+        <h4 class="mb-5 text-center"><strong>Don't have an account? Sign up below!</strong></h4>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+            <form>
+                !-- 2 column grid layout with text inputs for the first and last names --
+                <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                    <input type="text" id="form3Example1" class="form-control" />
+                    <label class="form-label" for="form3Example1">First name</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                    <input type="text" id="form3Example2" class="form-control" />
+                    <label class="form-label" for="form3Example2">Last name</label>
+                    </div>
+                </div>
+                </div>
+
+                !-- Email input --
+                <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" />
+                <label class="form-label" for="form3Example3">Email address</label>
+                </div>
+
+                !-- Password input --
+                <div class="form-outline mb-4">
+                <input type="password" id="form3Example4" class="form-control" />
+                <label class="form-label" for="form3Example4">Password</label>
+                </div>
+
+                !-- Checkbox --
+                <div class="form-check d-flex justify-content-center mb-4">
+                <input
+                    class="form-check-input me-2"
+                    type="checkbox"
+                    value=""
+                    id="form2Example3"
+                    checked
+                />
+                <label class="form-check-label" for="form2Example3">
+                    Subscribe to our newsletter
+                </label>
+                </div>
+
+                !-- Submit button --
+                <button type="submit" class="btn btn-primary btn-block mb-4">
+                Sign up
+                </button>
+            </form>
+            </div>
+        </div>
+        </section>
+    -->
+        <!--Section: Content-->
+    </div>
+    </main>
+    <!--Main layout-->
+
+
+    <hr class="m-0" />
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-dark" href="https://newlouslist.herokuapp.com/">New Lou's List</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!--Footer-->
+{% endblock %}

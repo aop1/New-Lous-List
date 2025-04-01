@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load json %}
+{% block head_title %}{% trans "Account Settings" %}{% endblock head_title %}
+
+{% block head_content %}
+    <script src="{% static 'louslist/js/account-settings.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<div class="content" style="width:45vw">
+    <div id="data">
+        <input type="hidden" id="user-dict" value="{% to_json user_dict %}" />
+    </div>
+
+    <div id="toast-container" class="position-fixed bottom-0 end-0 p-3 z-50">
+        <div class="toast" id="success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        </div>
+    </div>
+
+    <h2>Account Settings</h2>
+        {% if user %}
+            <div class="profile-image mb-3">
+                <label for="profile-image" class="mb-2">Profile Image</label>
+                {% with "https://iili.io/"|add:profile_img  as img_url %}
+                <img src="{{img_url}}" class="d-block mb-3" alt-text="profile-image-{{user.username}}" id="profile-image" width="100px" height="100px" />
+                <button type="button" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#select-profile-img">
+                    <i class="bi bi-pencil-square"></i>
+                    Edit Profile Image
+                </button>
+            </div>
+            {% endwith %}
+            <!--action="{% url 'update-account' %}" method="POST"-->
+            <form id="account-form">
+                {% csrf_token %}
+                <label for="name" class="form-label">Name</label>
+                <div class="d-flex flex-row mb-3">
+                        <input type="text" class="form-control me-3 w-50" name="first_name" placeholder="First Name" value="{{user.first_name}}"/>
+                        <input type="text" class="form-control w-50" name="last_name" placeholder="Last Name" value="{{user.last_name}}" />
+
+                </div> 
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control mb-3" id="username-input" name="username" value="{{user.username}}" placeholder="Username" onkeyup="removeValidity();" />
+                <label for="major" class="form-label">Major</label>
+                <input type="text" class="form-control mb-3" name="major" value="{{user.major}}" placeholder="Major" />
+                <label for="grad_year" class="form-label">Graduation Year</label>
+                <select class="form-select mb-3" name="grad_year">
+                    <option value="">Select your graduation year</option>
+                    {% for year in grad_years %}
+                        {% if year == user.grad_year %}
+                            <option value="{{year}}" selected>{{year}}</option>
+                        {% else %}
+                            <option value="{{year}}">{{year}}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <input type="hidden" name="profile_pic" id="profile-img-value" value="{{profile_img}}" />
+                <button type="button" class="btn btn-primary" onclick="updateAccountSettings('{{user}}');">Update Account Settings</button>
+            </form>
+        {% endif %}
+        
+
+
+
+    <div class="modal fade" id="select-profile-img" tabindex="-1" aria-labeledby="select-image-modal" aria-hidden="true">
+        <div class="modal-dialog m-w-512">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select a profile image</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {% for img in profile_imgs %}
+                            {% if img != profile_img %}
+                            <button type="button" class="bg-transparent border border-0 p-0 mb-4 me-3" data-bs-toggle="modal" data-bs-target="#select-profile-img" onclick="setProfileImg('{{img}}');">
+                                    {% with "https://iili.io/"|add:img  as img_url %}
+                                    <img src="{{img_url}}" class="" width="100px" height="100px" />
+                                    {% endwith %}
+                                </button>
+                            {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

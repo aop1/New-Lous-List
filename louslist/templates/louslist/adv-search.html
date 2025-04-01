@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block head_title %}{% trans 'Class Search' %}{% endblock head_title %}
+
+{% block head_content %}
+  <script src="{% static 'louslist/js/search-results.js' %}"></script>
+{% endblock%}
+
+{% block content %}
+<h1 class="fs-3">{% trans "Class Search" %}</h1>
+
+<p>Use this page to search for classes using the filters below:</p>
+
+<form class="classsearch" onsubmit="addSpinner('adv-search-spinner');" id="class_search" method="post" action="{% url 'results' %}">
+  {% csrf_token %}
+
+  <!-- First row of inputs -->
+  <div class="d-flex flex-row mb-3">
+    <!-- Class title Text -->
+    <div class="form-group" style="margin-right:1.5em">
+      <label for="classTitle">Class Title</label>
+      <input name="name" type="text" class="form-control" id="classTitle" placeholder="e.g. Introduction to Programming" size="45">
+    </div>
+    <!-- Class Mnemonic text -->
+    <div class="form-group" style="margin-right:1.5em">
+      <label for="classMnemonic">Class Mnemonic</label>
+      <input name="mnemonic" type="text" class="form-control" id="classMnemonic" placeholder="e.g. CS" size="4" maxlength="6">
+    </div>
+    <!-- Class Number Text -->
+    <div class="form-group" >
+      <label for="classNum">Class Number</label>
+      <input name="number" type="text" class="form-control" id="classNum" placeholder="e.g. 1110" size="4" maxlength="4">
+    </div>
+  </div>
+
+  <!-- Second row of inputs -->
+  <div class="d-flex flex-row mb-3">
+    <!-- Class Department -->
+    <div class="form-group" style="margin-right:1.5em">
+      <label for="classDepartment">Department</label>
+      <input name="dept" type="text" class="form-control" id="classDepartment" placeholder="e.g. Computer Science" size="35">
+    </div>
+    <!-- Class Instructor -->
+    <div class="form-group" style="margin-right:1.5em">
+      <label for="classInstructor">Instructor</label>
+      <input name="instructor" type="text" class="form-control" id="classInstructor" placeholder="e.g. Sherriff" size="35">
+    </div>
+  </div>
+
+  <!-- Third row of input (Meeting Days) -->
+  <div class="form-group mb-3">
+    <div class="mb-2">Meeting Days:</div>
+    <div class="form-check form-check-inline">
+      <input name="mo" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="Mo">
+      <label class="form-check-label" for="inlineCheckbox1">Monday</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="tu" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Tu">
+      <label class="form-check-label" for="inlineCheckbox2">Tuesday</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="we" class="form-check-input" type="checkbox" id="inlineCheckbox3" value="We">
+      <label class="form-check-label" for="inlineCheckbox3">Wednesday</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="th" class="form-check-input" type="checkbox" id="inlineCheckbox4" value="Th">
+      <label class="form-check-label" for="inlineCheckbox3">Thursday</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="fr" class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Fr">
+      <label class="form-check-label" for="inlineCheckbox3">Friday</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="sa" class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Sa">
+      <label class="form-check-label" for="inlineCheckbox3">Saturday</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="su" class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Su">
+      <label class="form-check-label" for="inlineCheckbox3">Sunday</label>
+    </div>
+  </div>
+
+  <!-- Fourth row of inputs -->
+  <div class="mb-2">Class Time Range:</div>
+  <p class="text-muted"><i class="bi bi-info-circle me-2"></i> Start time and end time must be blank or in HH:MM AM/PM format.</p>
+  <div class="d-flex flex-row mb-3">
+    <div class="form-time"  style="margin-right:1.5em">
+      <label for="StartTime">Start Time:</label>
+      <input name="start_time" class="form-control" type="time" id="StartTime" oninvalid="showStartTimeError();">
+    </div>
+    <div class="form-time"  style="margin-right:1.5em">
+      <label for="EndTime">End Time:</label>
+      <input name="end_time" class="form-control" type="time" id="EndTime" oninvalid="showEndTimeError();">
+    </div>
+  </div>
+
+  <!-- Fifth row of inputs -->
+  <div class="d-flex flex-row mb-3">
+    <div class="form-group" >
+        <label for="minSeats">Minimum Seats Available</label>
+        <input name="min" type="number" class="form-control" id="minSeats" size="40" min="0", max="999">
+    </div>
+  </div>
+
+  <div class="form-group d-flex flex-row align-items-center">
+    <button class="btn btn-primary me-3" type="submit">Search</button>
+    <div id="adv-search-spinner" role="status">
+    </div>
+  </div>
+
+</form>
+
+
+{% endblock %}
+

@@ -1,0 +1,72 @@
+{% extends "louslist/social-page-base.html" %}
+{% load i18n %}
+{% load static %}
+{% load json %}
+{% block head_title %}{% trans "Results" %}{% endblock head_title %}
+
+{% block head_content %}
+    <script src="{% static 'louslist/js/user-results.js'%}"></script>
+{% endblock %}
+
+{% block social_content %}
+<div class="user-search-results">
+        <h2 class="mb-3">User Search Results</h2>
+            {% if error_message %}
+                <div class="alert alert-danger" role="alert">
+                {{error_message}}
+                </div>
+            {% else %}
+            <div class="users d-flex flex-column">
+                    {% for user in users %}
+                        <div id="data">
+                            <input type="hidden" id="{{user.username}}" value="{% to_json user %}" />
+                            {% csrf_token %}
+                        </div>
+                        <div class="card mb-3 me-3">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="profile-img me-3">
+                                        {% if user.profile_pic != ""%}
+                                            {% with "https://iili.io/"|add:user.profile_pic as img_url %}
+                                            <img src="{{img_url}}" class="d-block mb-2" alt-text="profile-image-{{user.username}}"
+                                                width="60px" height="60px" />
+                                            {% endwith %}
+                                        {% else %}
+                                            <img src="https://iili.io/yhRgWb.md.png" class="d-block mb-2" alt-text="profile-image-{{user.username}}"
+                                            width="60px" height="60px" />
+                                        {% endif %}
+                                    </span>
+                                    <span>
+                                        <p class="me-3">
+                                            <strong>{{user.username}}</strong></br>
+                                            {% if user.first_name != "" and user.last_name != ""%}
+                                            {{user.first_name}} {{user.last_name}} </br>
+                                            {% endif %}
+                                            {%if user.major != "" %}
+                                            {{user.major}} </br>
+                                            {% endif%}
+                                            {% if user.grad_year %}
+                                            Class of {{user.grad_year}} </br>
+                                            {% endif %}
+                                        </p>
+                                    </span>
+                                    <div id="friend-buttons-{{user.id}}" class="ms-auto me-1">
+                                        {% if not user.are_friends %}
+                                            <button type="button" id="add-friend-{{user.id}}" class="btn btn-outline-success w-132px" onclick="addFriend({{user.id}}, '{{user.username}}')">Add Friend</button>
+                                        {% else %}
+                                            <button type="button" id="remove-friend-{{user.id}}" class="btn btn-outline-danger w-132px" onclick="removeFriend({{user.id}}, '{{user.username}}')">Remove Friend</button>
+                                        {% endif %}
+                                        <button type="button" class="btn btn-outline-primary d-block mt-3 ms-auto w-132px" onclick="window.open('{% url 'friendpage' user.username %}', '_self')">View Profile</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            <div id="toast-container" class="position-fixed bottom-0 end-0 p-3 z-50">
+                <div class="toast" id="success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+                </div>
+            </div>
+ </div>
+{% endblock %}

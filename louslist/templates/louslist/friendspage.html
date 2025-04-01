@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans 'New Lou\'s List' %}{% endblock head_title %}
+{%block content%}
+
+
+{% for item in all_user %}
+     <a href= # class="d-block text-decoration-none">
+{{item.get_username}}
+     </a>
+{%endfor%}
+
+{%endblock%}

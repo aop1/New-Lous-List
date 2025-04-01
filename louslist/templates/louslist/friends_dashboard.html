@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load json %}
+{% block head_title %} {{creator.username}}'s Schedule {% endblock %}
+{% block head_content %}
+<script src="{% static 'louslist/js/calendar-post.js' %}"></script>
+<link rel="stylesheet" href={% static 'louslist/socialBar.css' %} />
+{% endblock %}
+{% block content %}
+{% include 'louslist/social-pageBase.html' %}
+<div id="toast-container" class="position-fixed bottom-0 end-0 p-3 z-50">
+    <div class="toast" id="success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    </div>
+</div>
+
+    <div id="data">
+        <input type="hidden" id="schedule-value" value="{% to_json schedule %}" />
+        <input type="hidden" id="user-value" value="{% to_json user_dict %}" />
+        {% csrf_token %}
+    </div>
+
+<div style = "position:absolute; right:1100px; top:100px;" >
+    <span class="profile-img me-3">
+        {% with "https://iili.io/"|add:creator_img as img_url %}
+        <img src="{{img_url}}" class="d-block mb-2" alt-text="profile-image-{{user.username}}"
+                            width="200px" height="200px" />
+        {% endwith %}</span>
+    <div class ="card-holder" style = "position:absolute; right:-10px; top:200px; background:white;">
+<div class="card mb-4 border-0" style="width: 13rem;">
+  <div class="card-body align-items-center d-flex justify-content-center " >
+
+    <h1 class = "user-name">                 <strong>{{creator.username}}</strong></br>            {% if creator.first_name != "" and creator.last_name != ""%}
+                            {{creator.first_name}} {{creator.last_name}} </br>
+                            {% endif %}
+                            {%if creator.major != "" %}
+                            {{creator.major}} </br>
+                            {% endif%}
+                            {% if creator.grad_year %}
+                            Class of {{creator.grad_year}} </br>
+                            {% endif %}</h1>
+  </div>
+</div>
+</div>
+    </div>
+<div>
+
+</div>
+
+<div id="friend-buttons" class="ms-auto me-1" style = "position:absolute; right:200px">
+                        {% if user.username != creator.username and not are_friends %}
+                            <button type="button" id="add-friend-{{creator.id}}" class="btn btn-outline-success" onclick="addFriend({{creator.id}}, '{{creator.username}}')">Add Friend</button>
+                        {% elif user.username != creator.username and are_friends %}
+                            <button type="button" id="remove-friend-{{creator.id}}" class="btn btn-outline-danger" onclick="removeFriend({{creator.id}}, '{{creator.username}}')">Remove Friend</button>
+                        {% endif %}
+                    </div>
+
+<br>
+<br>
+<br>
+<div class = "class-feed" >
+<ul class="list-group">
+        {%if not classes%}
+  <li class="list-group-item">
+      <div class="col d-flex justify-content-center" >
+
+
+  <div class="card-body">
+    <p class="card-text" style = "text-align:center;">This User Currently Has No Public Schedules</p>
+  </div>
+</div>
+  </li>
+    {% endif %}
+    {% for item in classes%}
+  <li class="list-group-item">
+      <div class="col d-flex justify-content-center">
+<div class="card">
+  <h5 class="card-header">{{item.user}}</h5>
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+      {% for courses in item.classes.all%}
+
+    <p class="card-text"> {{courses.subject}} {{courses.catalog_number}}: {{courses.description}} ({{courses.instructor}}) {{courses.course_section}} </p>
+      {%endfor%}
+    <a href="{%url 'view-schedule' item.id %}" class="btn btn-primary"><i class="bi bi-calendar-date"></i>View Complete Schedule</a>
+  </div>
+    </div>
+</div>
+  </li>
+    <br>
+    <br>
+    <br>
+    {%endfor%}
+</ul>
+</div>
+
+{% endblock %}

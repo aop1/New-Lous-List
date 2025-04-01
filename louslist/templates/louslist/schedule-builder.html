@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% load json %}
+{% load meeting_display %}
+
+{% block head_title %} Schedule Builder {% endblock %}
+
+{% block head_content %}
+<script src="{% static 'louslist/js/calendar.js' %}"></script>
+<link rel="stylesheet" href={% static 'louslist/schedule-builder-styles.css' %} />
+{% endblock %}
+
+{% block content %}
+<div id="toast-container" class="position-fixed bottom-0 end-0 p-3 z-50">
+    <div class="toast" id="success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    </div>
+</div>
+
+<div class="content w-90vw">
+    <div id="data">
+        <input type="hidden" id="cart-value" value="{{cart_json}}" />
+        <input type="hidden" id="schedule-value" value="{{schedules_json}}" />
+        <input type="hidden" id="sections-map" value="{% to_json sections %}" />
+        {% csrf_token %}
+    </div>
+    <h2>Schedule Builder</h2>
+    <div class="row h-100-px mt-3 mb-3">
+        <div class="col-sm-3 me-3">
+            <h4>Your Cart</h3>
+                <div class="input-group">
+                    <span class="input-group-text border-end-0 bg-transparent"><i class="bi bi-search"></i></span>
+                    <input class="form-control border-start-0" id="search-cart-input" type="text"
+                        placeholder="Search Classes in Your Cart" onkeyup="showSearchResults();" />
+                </div>
+                <div class="cart-courses mt-3">
+                    {% for course in cart%}
+                    <div class="card mb-3" id="course-card-{{course.id}}">
+                        <div class="card-body">
+                            <span class="card-title d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">{{course.subject}} {{course.catalog_number}}</h5>
+                                <h6 class="card-title text-muted mb-0">{{course.component}}</h6>
+                                {% if schedules|length > 0%}
+                                <button class="btn text-success" id="add-{{ course.id }}"
+                                    onclick="addToSchedule({{ course.id }});">
+                                    <i class="bi bi-plus-circle"></i>
+                                </button>
+                                {% else %}
+                                <button class="btn text-muted disabled" id="add-{{ course.id }}"
+                                    onclick="addToSchedule({{ course.id }});">
+                                    <i class="bi bi-plus-circle"></i>
+                                </button>
+                                {% endif %}
+                            </span>
+                            <p>{{course.description}}</p>
+                            {% if course.topic != ""%}
+                            <p>{{course.topic}}</p>
+                            {% endif %}
+                            <p>{{course.instructor}}</p>
+                            {% for meeting in course.meetings %}
+                            {% if meeting.days != "-"%}
+                            <p>{{ meeting.days }}</p>
+                            {%endif%}
+                            <p>{% time_str "" meeting.start_time meeting.end_time %}</p>
+                            {% if meeting.facility_description != "-"%}
+                            <p>{{ meeting.facility_description }}</p>
+                            {%endif%}
+                            {% endfor%}
+
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+        </div>
+        <div class="col">
+            <h4>Schedules</h4>
+            <div class="d-flex flex-row schedule-header mb-3">
+                <select class="form-select w-auto me-3" id="select-schedule" onchange="onScheduleSelectChange();">
+                    {% if schedules|length > 0%}
+                    {% for schedule in schedules %}
+                    {%if forloop.counter0 == 0%}
+                    <option value="{{schedule.id}}" selected>{{schedule.name}}</option>
+                    {% else %}
+                    <option value="{{schedule.id}}">{{schedule.name}}</option>
+                    {% endif %}
+                    {% endfor %}
+                    {% else%}
+                    <option>View Your Schedules</option>
+                    {% endif %}
+                </select>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#create-schedule-modal">
+                    <i class="bi bi-calendar-date me-1"></i>
+                    Create schedule
+                </button>
+                {% if schedules|length > 0 %}
+                    <button class="ms-3 btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#schedule-settings">
+                        <i class="bi bi-gear-wide"></i>
+                        Schedule settings
+                    </button>
+                    <button class="ms-3 btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#delete-schedule-modal">
+                        <i class="bi bi-trash3"></i>
+                        Delete schedule
+                    </button>
+                {% endif %}
+            </div>
+            <div id="calendar" class="mb-3">
+                {% if schedules|length == 0%}
+                <div id="no-schedule-text" class="d-flex flex-column align-items-center">
+                    <h5>No Schedules Created</h5>
+                    <p>You haven't created any schedules. Create a new schedule to begin adding classes.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="modal fade" id="create-schedule-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Create a New Schedule</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" action="{%url 'create-schedule' %}">
+                            {% csrf_token %}
+                            <label for="schedule_name" class="form-label">Schedule Name</label>
+                            <input type="text" name="schedule_name" class="form-control mb-3"
+                                placeholder="Fall 2022 Schedule" required></label>
+
+                            <label for="semester" class="form-label">Semester</label>
+                            <select name="semester" class="form-select w-auto me-3 mb-3">
+                                <option value="1228">Fall Semester 2022</option>
+                            </select>
+                            
+                            <div class="d-flex flex-row align-items-center mb-2">
+                                <label for="visibility" class="form-label mb-0">Visibility</label>
+                                <span class="ms-2" data-bs-placement="top" data-bs-toggle="tooltip" data-bs-title="This setting will affect your schedule's visibility in your social page profile.">
+                                    <i class="bi bi-info-circle-fill"></i>
+                                </span>
+                            </div>
+                            <select name="visibility" class="form-select w-auto me-3 mb-3">
+                                <option value="3" selected>Public</option>
+                                <option value="2">Public to Friends Only</option>
+                                <option value="1">Private</option>
+                            </select>
+
+                            <label for="color" class="form-label">Label Your Schedule With a Color</label>
+                            <input type="color" name="color" class="form-control form-control-color mb-3">
+
+                            <button class="btn btn-primary">Create</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="schedule-settings" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" action="{%url 'edit-schedule' %}">
+                            {% csrf_token %}
+                            <input type="hidden" name="schedule_id" id="schedule-id"/>
+                            <label for="schedule_name" class="form-label">Schedule Name</label>
+                            <input type="text" name="schedule_name" class="form-control mb-3"
+                                placeholder="Fall 2022 Schedule" required></label>
+
+                            <div class="d-flex flex-row align-items-center mb-2">
+                                <label for="visibility" class="form-label mb-0">Visiblity</label>
+                                <span class="ms-2" data-bs-placement="top" data-bs-toggle="tooltip" data-bs-title="This setting will affect your schedule's visibility in your social page profile.">
+                                    <i class="bi bi-info-circle-fill"></i>
+                                </span>
+                            </div>
+                            
+                            <select name="visibility" class="form-select w-auto me-3 mb-3">
+                                <option value="3" selected>Public</option>
+                                <option value="2">Public to Friends Only</option>
+                                <option value="1">Private</option>
+                            </select>
+
+                            <label for="color" class="form-label">Label Your Schedule With a Color</label>
+                            <input type="color" name="color" class="form-control form-control-color mb-3">
+
+                            <button class="btn btn-primary">Update Settings</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="delete-schedule-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Delete Schedule?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="delete-warning-message"></p>
+                        <div class="delete-confirm-buttons d-flex flex-row">
+                            <form method="POST" action="{%url 'delete-schedule' %}" class="mb-0">
+                                {% csrf_token %}
+                                <input type="hidden" id="schedule-to-delete" name="schedule_id" value="" />
+                                <button type="submit" class="btn btn-primary me-3">Yes</button>
+                            </form>
+                            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endblock %}

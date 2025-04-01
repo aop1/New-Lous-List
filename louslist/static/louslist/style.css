@@ -1,0 +1,230 @@
+.web-app-title:hover {
+    color: #e8e6e6;
+}
+
+nav {
+    color: white;
+}
+
+.search-bar input {
+    background-color: #5472d3;
+    width: 500px;
+    height: 2.5rem;
+    border-width: 0px;
+    color: white;
+}
+
+.search-bar input::placeholder{
+    color: white;
+}
+
+.search-bar input::ms-input-placeholder{
+    color: white;
+}
+
+.search-bar button {
+    height: 2.5rem;
+}
+
+.search-bar input:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+.search-bar input:hover::placeholder{
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.search-bar input:hover::placeholder{
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.search-bar input:hover::ms-input-placeholder{
+    color: #6c757d;
+    transition: color 0.2s;
+}
+
+.search-bar input:focus{
+    color: black;
+}
+
+.search-bar input:focus::placeholder{
+    color: #6c757d;
+}
+
+
+.search-bar input:focus::ms-input-placeholder{
+    color: #6c757d;
+}
+
+.search-button{
+    color: white;
+    background-color: #002171;
+    border-color: #031a54;
+}
+
+.search-button:hover{
+    color: white;
+    background-color: #031a54;
+    border-color: #031a54;
+}
+
+
+.hidden-button {
+    position: absolute;
+    z-index: 5;
+    width: 176px;
+    height: 39px;
+    top: 10px;
+    opacity: 0;
+}
+
+.hidden-form{
+    display: inline;
+}
+
+.dropdown-menu[data-bs-popper]{
+    left: auto !important;
+    right: 1rem;
+}
+
+
+.bg-color-primary {
+    background-color: #0d47a1!important;
+}
+
+.bg-color-light{
+    background-color:#5472d3 !important;
+}
+
+.bg-color-dark{
+    background-color: #002171 !important;
+}
+
+.w-90{
+    width: 90% !important;
+}
+
+.sidebar {
+    background-color: #ededed;
+}
+
+.schedules {
+    min-height: 12rem;
+}
+
+.h-38{
+    height: 38px;
+}
+
+.btn-outline-primary {
+    color: #5472d3;
+    border-color: #5472d3;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: #5472d3;
+    border-color: #5472d3;
+}
+
+.schedule-button {
+    border: 1px solid rgba(0,0,0,.125)
+}
+
+
+.schedule-recent{
+    min-height: 14rem;
+}
+
+.btn-primary{
+    color: white;
+    background-color: #0d47a1;
+    border-color: #0d47a1;
+}
+
+
+.btn-primary:hover{
+    color: white;
+    background-color: #09377d;
+    border-color: #09377d;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #5472d3;
+    color: white;
+}
+
+.accordion-button::after, .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.text-color-primary{
+    color: #09377d;
+}
+
+.max-w-90{
+    max-width: 90% !important;
+}
+
+.bg-color-orange{
+    background-color: #E57200 !important;
+}
+
+.bg-color-navy{
+    background-color: #232D4B !important;
+}
+
+.course-number{
+    width: 70px;
+}
+
+.section-number{
+    width: 50px;
+}
+
+.section-type{
+    width: 120px;
+}
+
+button.bg-color-light{
+    color: white !important;
+}
+
+button.bg-color-light:hover{
+    background-color:#364987;
+}
+
+button.bg-color-orange{
+    color: white !important;
+}
+
+button.bg-color-orange:hover{
+    background-color:#c76c11 !important;
+}
+
+.course-card > p {
+    margin-bottom: 0.25rem;
+}
+
+#calendar > div.fc-view-harness.fc-view-harness-active > div > table > tbody > tr:nth-child(1) > td > div > div > div > table > tbody > tr > td.fc-timegrid-axis.fc-scrollgrid-shrink > div > span{
+    display: none;
+}
+
+.m-w-512 {
+    max-width: 512px !important;
+}
+
+.comment-action:after{
+    content: none;
+}
+
+.link{
+    color: #0d47a1;
+}
+.link:hover{
+    color: #09377d;
+}

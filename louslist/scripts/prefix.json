@@ -1,0 +1,5483 @@
+[
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SWAH",
+         "dep_name":"African-American & African Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":1
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"African-American & African Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":2
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MATH",
+         "dep_name":"Mathematics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":3
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AMST",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":4
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIUS",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":5
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":6
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HILA",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":7
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":8
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLPT",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":9
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIAF",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":10
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":11
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELC",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":12
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLIR",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":13
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAN",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":14
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":15
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":16
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":17
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":18
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":19
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAP",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":20
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUSI",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":21
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":22
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LNGS",
+         "dep_name":"American Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":23
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"Media Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":24
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SWAH",
+         "dep_name":"Anthropology",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":25
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Anthropology",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":26
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIND",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":27
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTR",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":28
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PETR",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":29
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SATR",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":30
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"URDU",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":31
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MEST",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":32
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SANS",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":33
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SAST",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":34
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"TURK",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":35
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PERS",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":36
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARAB",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":37
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MESA",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":38
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HEBR",
+         "dep_name":"Middle Eastern & South Asian Languages & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":39
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARAD",
+         "dep_name":"Art",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":40
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"Art",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":41
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTS",
+         "dep_name":"Art",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":42
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARAH",
+         "dep_name":"Art",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":43
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUSI",
+         "dep_name":"Music",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":44
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUEN",
+         "dep_name":"Music",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":45
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUPF",
+         "dep_name":"Music",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":46
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUBD",
+         "dep_name":"Music",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":47
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASTR",
+         "dep_name":"Astronomy",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":48
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHIL",
+         "dep_name":"Philosophy",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":49
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BIOL",
+         "dep_name":"Biology",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":50
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HBIO",
+         "dep_name":"Biology",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":51
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHYS",
+         "dep_name":"Physics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":52
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHEM",
+         "dep_name":"Chemistry",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":53
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLCP",
+         "dep_name":"Politics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":54
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAD",
+         "dep_name":"Politics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":55
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLIR",
+         "dep_name":"Politics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":56
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAP",
+         "dep_name":"Politics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":57
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLPT",
+         "dep_name":"Politics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":58
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CLAS",
+         "dep_name":"Classics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":59
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GREE",
+         "dep_name":"Classics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":60
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LATI",
+         "dep_name":"Classics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":61
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHS",
+         "dep_name":"Public Health Sciences",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":62
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"DRAM",
+         "dep_name":"Drama",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":63
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"DANC",
+         "dep_name":"Drama",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":64
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PSYC",
+         "dep_name":"Psychology",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":65
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHTR",
+         "dep_name":"East Asian Languages, Literatures & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":66
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EAST",
+         "dep_name":"East Asian Languages, Literatures & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":67
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JAPN",
+         "dep_name":"East Asian Languages, Literatures & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":68
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EALC",
+         "dep_name":"East Asian Languages, Literatures & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":69
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KOR",
+         "dep_name":"East Asian Languages, Literatures & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":70
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JPTR",
+         "dep_name":"East Asian Languages, Literatures & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":71
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHIN",
+         "dep_name":"East Asian Languages, Literatures & Cultures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":72
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELA",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":73
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELH",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":74
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELB",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":75
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":76
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELS",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":77
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELC",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":78
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELI",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":79
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"Religious Studies",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":80
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECON",
+         "dep_name":"Economics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":81
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUSS",
+         "dep_name":"Slavic Languages & Literatures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":82
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUTR",
+         "dep_name":"Slavic Languages & Literatures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":83
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SLAV",
+         "dep_name":"Slavic Languages & Literatures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":84
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SLFK",
+         "dep_name":"Slavic Languages & Literatures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":85
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"POL",
+         "dep_name":"Slavic Languages & Literatures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":86
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENWR",
+         "dep_name":"English",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":87
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENCW",
+         "dep_name":"English",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":88
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"English",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":89
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Sociology",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":90
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVGE",
+         "dep_name":"Environmental Sciences",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":91
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVAT",
+         "dep_name":"Environmental Sciences",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":92
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Environmental Sciences",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":93
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVEC",
+         "dep_name":"Environmental Sciences",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":94
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PORT",
+         "dep_name":"Spanish, Italian & Portuguese",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":95
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Spanish, Italian & Portuguese",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":96
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KICH",
+         "dep_name":"Spanish, Italian & Portuguese",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":97
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ITAL",
+         "dep_name":"Spanish, Italian & Portuguese",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":98
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ITTR",
+         "dep_name":"Spanish, Italian & Portuguese",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":99
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FREN",
+         "dep_name":"French Language & Literature",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":100
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CREO",
+         "dep_name":"French Language & Literature",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":101
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FRTR",
+         "dep_name":"French Language & Literature",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":102
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"STAT",
+         "dep_name":"Statistics",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":103
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GETR",
+         "dep_name":"German Languages & Literatures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":104
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GERM",
+         "dep_name":"German Languages & Literatures",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":105
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":106
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIUS",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":107
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELB",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":108
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":109
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":110
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":111
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":112
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SLFK",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":113
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"Women, Gender, and Sexuality",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":114
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEU",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":115
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEA",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":116
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIUS",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":117
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIST",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":118
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HISA",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":119
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIME",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":120
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HILA",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":121
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MSP",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":122
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIAF",
+         "dep_name":"History",
+         "school":"Arts & Sciences Departments"
+      },
+      "pk":123
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASL",
+         "dep_name":"American Sign Language",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":124
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"INST",
+         "dep_name":"Interdisciplinary Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":125
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARCY",
+         "dep_name":"Archaeology",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":126
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELC",
+         "dep_name":"Jewish Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":127
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Jewish Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":128
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JWST",
+         "dep_name":"Jewish Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":129
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"COGS",
+         "dep_name":"Cognitive Science",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":130
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LAST",
+         "dep_name":"Latin American Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":131
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Latin American Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":132
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Latin American Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":133
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HILA",
+         "dep_name":"Latin American Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":134
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CS",
+         "dep_name":"Computer Science",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":135
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LASE",
+         "dep_name":"Liberal Arts Seminars",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":136
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENCW",
+         "dep_name":"Creative Writing",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":137
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"Creative Writing",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":138
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Linguistics",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":139
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Linguistics",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":140
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LING",
+         "dep_name":"Linguistics",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":141
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PSYC",
+         "dep_name":"Linguistics",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":142
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LNGS",
+         "dep_name":"Linguistics",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":143
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDHS",
+         "dep_name":"Linguistics",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":144
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDIS",
+         "dep_name":"Disability Studies Initiative",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":145
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Disability Studies Initiative",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":146
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Disability Studies Initiative",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":147
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASL",
+         "dep_name":"Disability Studies Initiative",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":148
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDHS",
+         "dep_name":"Disability Studies Initiative",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":149
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KINE",
+         "dep_name":"Disability Studies Initiative",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":150
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEU",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":151
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEA",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":152
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":153
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELC",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":154
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELI",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":155
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LATI",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":156
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIME",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":157
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":158
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MSP",
+         "dep_name":"Medieval Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":159
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHTR",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":160
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EAST",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":161
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AMST",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":162
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEA",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":163
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EALC",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":164
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JAPN",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":165
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELB",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":166
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RSC",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":167
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":168
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":169
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":170
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KOR",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":171
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLIR",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":172
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":173
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JPTR",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":174
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHIN",
+         "dep_name":"East Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":175
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":176
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTR",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":177
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELI",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":178
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIME",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":179
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PETR",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":180
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"URDU",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":181
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MEST",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":182
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PERS",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":183
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARAB",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":184
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MESA",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":185
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HEBR",
+         "dep_name":"Middle Eastern Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":186
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"NESC",
+         "dep_name":"Neuroscience",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":187
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ETP",
+         "dep_name":"Environmental Thought & Practice Practice",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":188
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARH",
+         "dep_name":"Outside Arts & Sciences",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":189
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARCH",
+         "dep_name":"Outside Arts & Sciences",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":190
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAN",
+         "dep_name":"Outside Arts & Sciences",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":191
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EURS",
+         "dep_name":"European Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":192
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PPL",
+         "dep_name":"Political Philosophy, Policy and Law",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":193
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CLAS",
+         "dep_name":"Global Citizenry in Action and in Translation",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":194
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ITTR",
+         "dep_name":"Global Citizenry in Action and in Translation",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":195
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUTR",
+         "dep_name":"Global Citizenry in Action and in Translation",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":196
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PST",
+         "dep_name":"Political & Social Thought",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":197
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSVS",
+         "dep_name":"Global Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":198
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSGS",
+         "dep_name":"Global Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":199
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSSJ",
+         "dep_name":"Global Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":200
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSMS",
+         "dep_name":"Global Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":201
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GDS",
+         "dep_name":"Global Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":202
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELH",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":203
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIND",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":204
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELB",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":205
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"URDU",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":206
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SANS",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":207
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SAST",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":208
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SATR",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":209
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HISA",
+         "dep_name":"South Asian Studies",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":210
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GHSS",
+         "dep_name":"Graduate Humanities & Social Sciences",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":211
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"USEM",
+         "dep_name":"University Seminars",
+         "school":"Arts & Sciences Programs, Seminars, and Institutes"
+      },
+      "pk":212
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EGMT",
+         "dep_name":"Engagements",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":213
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EGMT",
+         "dep_name":"Engaging Aesthetics",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":214
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EGMT",
+         "dep_name":"Empirical and Scientific Engagement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":215
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EGMT",
+         "dep_name":"Engaging Differences",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":216
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EGMT",
+         "dep_name":"Ethical Engagement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":217
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GREE",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":218
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":219
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KICH",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":220
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"POL",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":221
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"URDU",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":222
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KOR",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":223
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PERS",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":224
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LATI",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":225
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"TURK",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":226
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CREO",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":227
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GERM",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":228
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHIN",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":229
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SWAH",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":230
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIND",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":231
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JAPN",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":232
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":233
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASL",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":234
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HEBR",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":235
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FREN",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":236
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PORT",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":237
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUSS",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":238
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ITAL",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":239
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARAB",
+         "dep_name":"World Languages",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":240
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENWR",
+         "dep_name":"First Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":241
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":242
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIUS",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":243
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIST",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":244
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":245
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":246
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HILA",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":247
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MEST",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":248
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"URDU",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":249
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MESA",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":250
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":251
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GDS",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":252
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIAF",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":253
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHYS",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":254
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":255
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEU",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":256
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LAST",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":257
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SAST",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":258
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLIR",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":259
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHEM",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":260
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENWR",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":261
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSVS",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":262
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEA",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":263
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUTR",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":264
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSSJ",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":265
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":266
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SATR",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":267
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSMS",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":268
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HISA",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":269
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARCY",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":270
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":271
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":272
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":273
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELI",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":274
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":275
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLCP",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":276
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHIL",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":277
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GETR",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":278
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JPTR",
+         "dep_name":"Second Writing Requirement",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":279
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"STAT",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":280
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":281
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MATH",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":282
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECON",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":283
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PSYC",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":284
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHIL",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":285
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASTR",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":286
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHYS",
+         "dep_name":"Quantification, Computation, & Data Analysis",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":287
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHTR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":288
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GREE",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":289
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AMST",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":290
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELB",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":291
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":292
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARH",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":293
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":294
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"URDU",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":295
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MEST",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":296
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MESA",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":297
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":298
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PETR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":299
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLPT",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":300
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":301
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTS",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":302
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EAST",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":303
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEU",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":304
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":305
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"DANC",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":306
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"DRAM",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":307
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELC",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":308
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LATI",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":309
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SANS",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":310
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SAST",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":311
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GERM",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":312
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHIN",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":313
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENWR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":314
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELA",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":315
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JAPN",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":316
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUTR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":317
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":318
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":319
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CLAS",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":320
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASL",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":321
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PST",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":322
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SATR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":323
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FREN",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":324
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":325
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":326
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SLAV",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":327
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":328
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELI",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":329
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ITTR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":330
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":331
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAP",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":332
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLCP",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":333
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUSI",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":334
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHIL",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":335
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GETR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":336
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JPTR",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":337
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENCW",
+         "dep_name":"Artistic, Interpretive, & Philosophical Inquiry",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":338
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHEM",
+         "dep_name":"Chemical, Mathematical, and Physical Universe",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":339
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSVS",
+         "dep_name":"Chemical, Mathematical, and Physical Universe",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":340
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Chemical, Mathematical, and Physical Universe",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":341
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MATH",
+         "dep_name":"Chemical, Mathematical, and Physical Universe",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":342
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASTR",
+         "dep_name":"Chemical, Mathematical, and Physical Universe",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":343
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHYS",
+         "dep_name":"Chemical, Mathematical, and Physical Universe",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":344
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHTR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":345
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GREE",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":346
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AMST",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":347
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":348
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIUS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":349
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLCP",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":350
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELB",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":351
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":352
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARH",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":353
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIME",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":354
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":355
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HILA",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":356
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MEST",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":357
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MESA",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":358
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":359
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PETR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":360
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GDS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":361
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FRTR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":362
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIAF",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":363
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":364
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EAST",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":365
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEU",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":366
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":367
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELC",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":368
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LATI",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":369
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SLFK",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":370
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SAST",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":371
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLIR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":372
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAN",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":373
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GERM",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":374
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHIN",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":375
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELA",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":376
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEA",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":377
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSGS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":378
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIND",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":379
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JAPN",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":380
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUTR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":381
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":382
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":383
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CLAS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":384
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SATR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":385
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LNGS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":386
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MSP",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":387
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HISA",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":388
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FREN",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":389
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PORT",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":390
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUSS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":391
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":392
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":393
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ITAL",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":394
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SLAV",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":395
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELI",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":396
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":397
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARAB",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":398
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUSI",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":399
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":400
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GETR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":401
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"JPTR",
+         "dep_name":"Cultures & Societies of the World",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":402
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AMST",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":403
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELB",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":404
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIUS",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":405
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIST",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":406
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELJ",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":407
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARH",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":408
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIME",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":409
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":410
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HILA",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":411
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":412
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GDS",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":413
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIAF",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":414
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLPT",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":415
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":416
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEU",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":417
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELH",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":418
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELC",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":419
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LATI",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":420
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SAST",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":421
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLIR",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":422
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAN",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":423
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEA",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":424
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SPAN",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":425
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":426
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CLAS",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":427
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MSP",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":428
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HISA",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":429
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FREN",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":430
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":431
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":432
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":433
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELI",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":434
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":435
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLCP",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":436
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MUSI",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":437
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHIL",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":438
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GETR",
+         "dep_name":"Historical Perspectives",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":439
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHEM",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":440
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":441
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":442
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GETR",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":443
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHS",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":444
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PSYC",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":445
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASTR",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":446
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BIOL",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":447
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHYS",
+         "dep_name":"Living Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":448
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AMST",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":449
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":450
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIUS",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":451
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIST",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":452
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARH",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":453
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHS",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":454
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PSYC",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":455
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":456
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"HIEU",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":457
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELH",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":458
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"DRAM",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":459
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECON",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":460
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLIR",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":461
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSVS",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":462
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ETP",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":463
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSSJ",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":464
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":465
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASL",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":466
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PST",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":467
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":468
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":469
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":470
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MDST",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":471
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAP",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":472
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLCP",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":473
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHIL",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":474
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LNGS",
+         "dep_name":"Social & Economic Systems",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":475
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GSVS",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":476
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":477
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":478
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":479
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ETP",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":480
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARH",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":481
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHIL",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":482
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECON",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":483
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAP",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":484
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHS",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":485
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PSYC",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":486
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARTH",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":487
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ASTR",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":488
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BIOL",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":489
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHYS",
+         "dep_name":"Science & Society",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":490
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"FORU",
+         "dep_name":"Forums",
+         "school":"Arts & Sciences Curriculum and Requirements"
+      },
+      "pk":491
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"APMA",
+         "dep_name":"Applied Mathematics",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":492
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CPE",
+         "dep_name":"Electrical & Computer Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":493
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECE",
+         "dep_name":"Electrical & Computer Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":494
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BME",
+         "dep_name":"Biomedical Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":495
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MSE",
+         "dep_name":"Materials Science & Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":496
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHE",
+         "dep_name":"Chemical  Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":497
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MAE",
+         "dep_name":"Mechanical & Aerospace Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":498
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CE",
+         "dep_name":"Civil & Environmental Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":499
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"STS",
+         "dep_name":"Science, Technology & Society",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":500
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CS",
+         "dep_name":"Computer Science",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":501
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SYS",
+         "dep_name":"Systems & Information Engineering",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":502
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGR",
+         "dep_name":"Cross-Disciplinary Courses",
+         "school":"Engineering & Applied Sciences Departments"
+      },
+      "pk":503
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDHS",
+         "dep_name":"Human Services",
+         "school":"School of Education and Human Development Departments "
+      },
+      "pk":504
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDIS",
+         "dep_name":"Curriculum, Instruction, and Special Education",
+         "school":"School of Education and Human Development Departments "
+      },
+      "pk":505
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDLF",
+         "dep_name":"Education Leadership, Foundations and Policy",
+         "school":"School of Education and Human Development Departments "
+      },
+      "pk":506
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KLPA",
+         "dep_name":"Kinesiology",
+         "school":"School of Education and Human Development Departments "
+      },
+      "pk":507
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"KINE",
+         "dep_name":"Kinesiology",
+         "school":"School of Education and Human Development Departments "
+      },
+      "pk":508
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARCH",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":509
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARAH",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":510
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ALAR",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":511
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ARH",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":512
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LAR",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":513
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SARC",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":514
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAC",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":515
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAN",
+         "dep_name":"Architecture",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":516
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"INST",
+         "dep_name":"Interdisciplinary Studies",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":517
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHE",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":518
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CPE",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":519
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGR",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":520
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CS",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":521
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MAE",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":522
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SYS",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":523
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"STS",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":524
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECE",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":525
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BME",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":526
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MSE",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":527
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CE",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":528
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"APMA",
+         "dep_name":"",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":529
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LAW",
+         "dep_name":"Law School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":530
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GBUS",
+         "dep_name":"Business (Darden School)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":531
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHY",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":532
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BIOP",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":533
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MICR",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":534
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BIOC",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":535
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MED",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":536
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BIMS",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":537
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHAR",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":538
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PATH",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":539
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CELL",
+         "dep_name":"Medical School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":540
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"COMM",
+         "dep_name":"Commerce (McIntire School)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":541
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GCOM",
+         "dep_name":"Commerce (McIntire School)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":542
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"NUCO",
+         "dep_name":"Nursing School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":543
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"NURS",
+         "dep_name":"Nursing School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":544
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"NUIP",
+         "dep_name":"Nursing School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":545
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GNUR",
+         "dep_name":"Nursing School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":546
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GCNL",
+         "dep_name":"Nursing School",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":547
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENTP",
+         "dep_name":"Cross Disciplinary (For All Schools)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":548
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LPPP",
+         "dep_name":"Public Policy (Batten School)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":549
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LPPS",
+         "dep_name":"Public Policy (Batten School)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":550
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LPPA",
+         "dep_name":"Public Policy (Batten School)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":551
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LPPL",
+         "dep_name":"Public Policy (Batten School)",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":552
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"DS",
+         "dep_name":"Data Science",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":553
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"USEM",
+         "dep_name":"University Seminars",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":554
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHE",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":555
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CPE",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":556
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGR",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":557
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CS",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":558
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MAE",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":559
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SYS",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":560
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"STS",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":561
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECE",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":562
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"BME",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":563
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MSE",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":564
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CE",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":565
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"APMA",
+         "dep_name":"Engineering and Applied Sciences",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":566
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"UNST",
+         "dep_name":"University Studies",
+         "school":"Other Schools at the University of Virginia"
+      },
+      "pk":567
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AMST",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":568
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LPPP",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":569
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENGL",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":570
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":571
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PSYC",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":572
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CE",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":573
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GDS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":574
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"WGS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":575
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"COMM",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":576
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAN",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":577
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EGMT",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":578
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"GNUR",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":579
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CHIN",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":580
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENWR",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":581
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDIS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":582
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RUTR",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":583
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":584
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"NURS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":585
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"LPPS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":586
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":587
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AAS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":588
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"STS",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":589
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAP",
+         "dep_name":"Civic and Community Engagement",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":590
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ENTP",
+         "dep_name":"Cross Disciplinary (For All Schools)",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":591
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"AIRS",
+         "dep_name":"Air Science",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":592
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ANTH",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":593
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EVSC",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":594
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"COMM",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":595
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLCP",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":596
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"SOC",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":597
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAC",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":598
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"ECON",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":599
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PLAN",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":600
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"PHS",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":601
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"RELG",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":602
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"CE",
+         "dep_name":"Global Sustainability",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":603
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MISC",
+         "dep_name":"Military Science",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":604
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"MBI",
+         "dep_name":"(Summer 2016)",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":605
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"NASC",
+         "dep_name":"Naval Science",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":606
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"UNST",
+         "dep_name":"University Studies",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":607
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDHS",
+         "dep_name":"Youth and Social Innovation",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":608
+   },
+   {
+      "model":"louslist.Prefix",
+      "fields":{
+         "prefix":"EDLF",
+         "dep_name":"Youth and Social Innovation",
+         "school":"Other Programs, Seminars, and Institutes"
+      },
+      "pk":609
+   }
+]

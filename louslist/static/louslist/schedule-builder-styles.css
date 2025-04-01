@@ -1,0 +1,15 @@
+/* Remove the top dates and navigation bar */
+
+.fc-toolbar-chunk{
+    display: none;
+}
+
+.fc-header-toolbar{
+    display: none;
+    margin-bottom: 0 !important;
+}
+
+.cart-courses{
+    max-height: 623.704px;
+    overflow-y: scroll;
+}

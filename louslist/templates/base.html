@@ -1,0 +1,188 @@
+{% load account %}
+{% load i18n %}
+{% load socialaccount %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://accounts.google.com/gsi/client"></script>
+    <title>{% block head_title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'louslist/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'louslist/DepartmentsPageStyle.css' %}" />
+    <link rel="stylesheet" href="{% static 'louslist/dashboard-style.css' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'louslist/helpers.css' %}" />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+    <link rel="icon" type="image/x-icon" href="{% static 'louslist/favicon-32x32.png' %}">
+    {% block head_content %}
+    {% endblock %}
+</head>
+
+<body>
+    <!--This is the navigation bar with the menu button, search bar, and sign in button / username-->
+    <nav class="navbar navbar-expand-lg bg-color-primary d-flex justify-content-between align-items-center">
+        <div class="logo-and-menu d-flex flex-row ms-1">
+            <button class="menu btn border-end border-2 text-white" data-bs-toggle="offcanvas" href="#menu-offcanvas">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+            <h2><a href="{% url 'home' %}" class="web-app-title ms-2 fs-3 text-white" style="text-decoration: none">New
+                    Lou's
+                    List</a></h2>
+        </div>
+
+        <form class="search-bar d-flex flex-row mb-0" action="{% url 'quick-search' %}" id="search-form">
+            <input name="q" id="search-input" class="form-control me-2" type="text" placeholder="Search for a course" required/>
+            <button type="submit" class="btn search-button">
+                <!--Search bar icon-->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </button>
+        </form>
+
+        <!--If the user is authenticated, show user name. Otherwise, show Google sign in-->
+        {% if is_authenticated or user.is_authenticated %}
+            <div class="btn-group">
+                <button class="btn d-flex flex-row align-items-center me-3 py-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {%if user.profile_pic != "" %}
+                            {% with "https://iili.io/"|add:user.profile_pic  as img_url %}
+                                <img src="{{img_url}}" class="d-block me-2" alt-text="profile-image-{{user.username}}" width="40px" height="40px" />
+                            {% endwith %}
+                        {% endif %}
+                        <p class="fs-6 my-0 text-white" id="navbar-username">{{ user.username }}</p>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="{% url 'dashboard' %}" class="dropdown-item">
+                            <i class="bi bi-person-circle me-2"></i> 
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'account-settings' %}" class="dropdown-item">
+                            <i class="bi bi-gear-wide me-2"></i> 
+                            Account Settings
+                        </a>
+                    </li>
+                    <li>
+                        <form class="mb-0" action="{% url 'account_logout' %}" method="post">
+                            {% csrf_token %}
+                            <button class="dropdown-item">
+                                <i class="bi bi-box-arrow-right me-2"></i>
+                                Log Out
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            
+        {% else %}
+        <div class="sign-in me-3">
+
+            <!--Invisible button that handles Google Login with Django All Auth-->
+            <form class="my-0" action="{% url 'google_login' %}?action=reauthenticate" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn w-177 h-40 p-0">
+                    <img src="https://iili.io/HdMhqZu.png" alt="google-sign-in" width="177" height="40" />
+                </button>
+            </form>
+        </div>
+        {% endif %}
+
+
+    </nav>
+
+    <!--This is what shows in the menu sidebar-->
+    <div class="offcanvas offcanvas-start" id="menu-offcanvas">
+        <div class="offcanvas-header bg-color-primary text-white border-bottom">
+            <div class="offcanvas-title text-color-white fs-4">
+                <h2>New Lou's List</h2>
+            </div>
+            <button type="button" class="text-white btn me-1 fs-5" data-bs-dismiss="offcanvas">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+
+
+        <!--This is the list of pages for navigation-->
+        <div class="pages mt-2 list-group">
+            {% if is_authenticated or user.is_authenticated %}
+            <a href="{% url 'dashboard' %}" role="button" aria-disabled="true" style="text-decoration: none;">
+                <button class="list-group-item list-group-item-action">
+                    <i class="bi bi-person-circle me-2"></i>
+                    Dashboard
+                </button>
+            </a>
+            </form>
+            {% endif %}
+            <a href="{% url 'majorpage' %}" role="button" aria-disabled="true" style="text-decoration: none;">
+                <button class="list-group-item list-group-item-action">
+                    <i class="bi bi-book me-2"></i>
+                    Browse By Department
+                </button>
+            </a>
+            <a href="{% url 'advS' %}" role="button" aria-disabled="true" style="text-decoration: none;">
+                <button class="list-group-item list-group-item-action">
+                    <i class="bi bi-search me-2"></i>
+                    Advanced Search
+                </button>
+            </a>
+            {% if is_authenticated or user.is_authenticated %}
+                <a href="{% url 'schedule-builder' %}" role="button" aria-disabled="false" style="text-decoration: none;">
+                    <button class="list-group-item list-group-item-action">
+                        <i class="bi bi-calendar-date me-2"></i>
+                        Schedule Builder
+                    </button>
+                </a>
+                <a href="{% url 'socialpage' %}" role="button" aria-disabled="true" style="text-decoration: none;">
+                    <button class="list-group-item list-group-item-action">
+                        <i class="bi bi-people-fill me-2"></i>
+                        Social Page
+                    </button>
+                </a>
+            {% endif %}
+            <!--If the user is authenticated, show the logout button-->
+            {% if is_authenticated or user.is_authenticated %}
+            <a href="{% url 'account-settings' %}" role="button" aria-disabled="true" style="text-decoration: none;">
+                <button class="list-group-item list-group-item-action">
+                    <i class="bi bi-gear-wide me-2"></i>
+                    Account Settings
+                </button>
+            </a>
+            <form class="d-inline-flex" action="{% url 'account_logout' %}" method="post">
+                {% csrf_token %}
+                <button class="list-group-item list-group-item-action">
+                    <i class="bi bi-box-arrow-right me-2"></i>
+                    Log Out
+                </button>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+
+    <!--Content of the page goes within here between the content blocks-->
+    <div class="d-flex justify-content-center">
+        <div class="content-block mt-2 d-flex flex-column">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+
+</html>

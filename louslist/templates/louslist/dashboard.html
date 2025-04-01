@@ -1,0 +1,177 @@
+{% extends "base-uncentered.html" %}
+{% load i18n %}
+{% load static %}
+{% load meeting_display %}
+
+{% block head_title %}Dashboard{% endblock %}
+
+{%block head_content%}
+    <script src="{% static 'louslist/js/dashboard.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard signup-form mt-2 d-flex flex-column w-90">
+    <h2 class="mb-3">Dashboard</h2>
+    <div class="schedules shadow card">
+        <div class="card-body">
+            <div class="card-title h-38 d-flex align-items-center justify-content-between">
+                <h5 class="card-title d-inline schedule-title">Schedule</h5>
+                <button class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#create-schedule-modal">
+                    <i class="bi bi-calendar-date me-1"></i>
+                    Create a new schedule
+                </button>
+            </div>
+
+                {%for schedule in schedules %}
+                    <button class="schedule-button btn w-100 mb-3 py-2" onclick="window.open('/schedule-builder/{{schedule.id}}/');">
+                        <div class="d-flex align-items-center flex-row">
+                            <i class="bi bi-circle-fill me-3" style="color:{{schedule.color}}"></i>
+                            <p class="me-2 mb-0">{{ schedule.name }}</p>
+                            {% if schedule.semester == 1228 %}
+                                <p class="text-secondary mb-0">Fall 2022</p>
+                            {% endif %}
+                    </button>
+                {% endfor %}
+
+                {% if schedules|length == 0 %}
+                    <p>You haven't created any schedules yet. Add some classes to your cart and click
+                        Create New Schedule to create one.</p>
+                {% endif %}
+            </div>
+        </div>
+
+    <div class="schedule-recent my-3 row">
+        <div class="left col-7">
+            <div class="shadow card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Classes in Your Cart</h5>
+                    <!-- if the cart is empty, display no classes message -->
+                    {% if not user.cart.first %}
+                    <p class="card-text">You haven't added any classes </p>
+                    {% else %}
+                    <!-- create a modal for each unique course in unique cart -->
+                    <script>
+                        let elem = document.getElementById("");
+                        let newString = "";
+                    </script>
+                    {% for unique_course in unique_cart %}
+                    <!-- Modal -->
+                    <div class="modal fade" id="id-{{unique_course.id}}" tabindex="-1" role="dialog" aria-labelledby="ModalLabel-{{unique_course.id}}" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ModalLabel-{{unique_course.id}}">{{unique_course.subject}} {{unique_course.catalog_number}}: {{unique_course.description}}</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                              <!-- for each course in users cart -->
+                            {% for course in cart %}
+                              <!-- only display if course matches the unique course description and subject -->
+                              {% if course.description == unique_course.description and course.subject == unique_course.subject and course.catalog_number == unique_course.catalog_number%}
+                              <p>{{course.course_section}}-{{course.component}} ({{course.course_number}}) with {{course.instructor}}</p>
+                                  <input type="hidden" value="{{course.course_number}}" class="{{course.subject}}-{{course.catalog_number}}">
+                                <!-- Display each meeting for the specific class section -->
+                                  {% for meeting in course.meetings %}
+                                  <!-- Format with location, days and time on the line below -->
+                                  <p style="text-align:left;" class="mb-0">
+                                    {% time_str meeting.days meeting.start_time meeting.end_time %}
+                                  </p>
+                                  <p class="mt-0">{{ meeting.facility_description|location }}</p>
+
+                                  {% endfor %}
+                                  <hr class="solid" id="{{course.course_number}}-divider">
+                                  <script>
+                                    newString = "{{course.course_number}}-divider";
+                                  </script>
+                              {% endif %}
+                            {% endfor %}
+                              <script>
+                              elem = document.getElementById(newString);
+                                  if (elem) {
+                                  elem.classList.add("d-none");
+                              }
+                              newString = "";
+                                </script>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <!-- Remove Class button -->
+
+                        <p class="me-3 mb-0 w-50">{{unique_course.subject}} {{unique_course.catalog_number}}: {{unique_course.description}}</p>
+                        <!-- Button trigger modal for each unique class -->
+                        <button type="button" class="btn btn-primary btn-sm me-2 ms-auto" data-bs-toggle="modal" data-bs-target="#id-{{unique_course.id}}">
+                          Details
+                        </button>
+                        <button id="remove-{{unique_course.subject}}-{{unique_course.catalog_number}}" class="btn btn-outline-danger btn-sm me-1" onclick="removeClassCart('{{unique_course.subject}}', '{{unique_course.catalog_number}}');">
+                            Remove
+                            <i class="bi bi-trash3"></i>
+                        </button>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    
+        <div class="right col">
+            <div class="shadow card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Your Recent Searches</h5>
+                    <div id="recent-body">
+                        {% if recent_searches|length == 0 %}
+                            <p>You haven't searched for anything.</p>
+                        {% endif %}
+
+                        {%for search in recent_searches%}
+                            <a class="d-block text-decoration-none mb-1 text-light-blue" href="/search?q={{search}}"/>{{ search }}</a>
+                        {% endfor%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="create-schedule-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create a New Schedule</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{%url 'create-schedule' %}">
+                        {% csrf_token %}
+                        <label for="schedule_name" class="form-label">Schedule Name</label>
+                        <input type="text" name="schedule_name" class="form-control mb-3" placeholder="Fall 2022 Schedule"
+                            required></label>
+    
+                        <label for="semester" class="form-label">Semester</label>
+                        <select name="semester" class="form-select w-auto me-3 mb-3">
+                            <option value="1228">Fall Semester 2022</option>
+                        </select>
+
+                        <label for="visibility" class="form-label">Visiblity</label>
+                        <select name="visibility" class="form-select w-auto me-3 mb-3">
+                            <option value="3" selected>Public</option>
+                            <option value="2">Public to Friends Only</option>
+                            <option value="1">Private</option>
+                        </select>
+    
+                        <label for="color" class="form-label">Label Your Schedule With a Color</label>
+                        <input type="color" name="color" class="form-control form-control-color mb-3">
+    
+                        <button class="btn btn-primary">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

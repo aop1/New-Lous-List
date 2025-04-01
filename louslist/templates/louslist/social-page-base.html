@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block head_content %}
+    <script src={% static 'louslist/js/sidebar.js' %}></script>
+{% endblock %}
+
+{% block content %}
+<div id="toast-container" class="position-fixed bottom-0 end-0 p-3 z-50">
+    <div class="toast" id="success-toast" role="alert" aria-live="assertive" aria-atomic="true">
+    </div>
+</div>
+
+<div class="social-page w-95vw row">
+    <div class="col social-content me-3">
+        {% block social_content %}
+        {% endblock %}
+    </div>
+
+    <div class="col-3 social-sidebar">
+        <div class="card w-100">
+            <div class="card-body">
+                <h4 class="mb-3">Social Page</h4>
+                <a href={% url 'socialpage' %} class="text-decoration-none mb-3 d-block link">
+                    <i class="bi bi-house me-2"></i>
+                    Your Feed
+                </a>
+                <a href={% url 'friendpage' user.username %} class="text-decoration-none mb-3 d-block link">
+                    <i class="bi bi-person-circle me-2"></i>
+                    Your Profile
+                </a>
+                <form class="friends-search" action={% url "socialpage" %}>
+                    <label class="form-label">Find Friends</label>
+                    <div class="d-flex flex-row mb-3">
+                        <input type="text" class="form-control me-2" placeholder="Name or Username" name="q" />
+                        <button class="btn btn-outline-primary">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+
+                    <div>
+                        <h6 class="mb-3">Your friends</h6>
+                        <div id="friends-list">
+                            {% for friend in all_user|slice:":5" %}
+                                <div class="friend-block d-flex flex-row align-items-center mb-2" id="friend-{{friend.id}}">
+                                    {% if friend.profile_pic != ""%}
+                                        {% with "https://iili.io/"|add:friend.profile_pic as img_url %}
+                                        <img src="{{img_url}}" class="d-block me-3" alt-text="profile-image-{{friend.profile_pic}}"
+                                            width="50px" height="50px" />
+                                        {% endwith %}
+                                    {% else %}
+                                        <img src="https://iili.io/yhRgWb.md.png" class="d-block me-3" alt-text="profile-image-{{friend.profile_pic}}"
+                                        width="50px" height="50px" />
+                                    {% endif %}
+                                    <a href="{% url 'friendpage' friend.get_username %}" class="d-block text-decoration-none link">
+                                        {{friend.get_username}}
+                                    </a>
+                                </div>
+                            {%endfor%}
+                        </div>
+                        {% if all_user|length > 5%}
+                            <div class="accordion border-0">
+                                <div class="accordion-item border-0">
+                                    <div class="accordion-header border-0">
+                                        <a class="w-100 p-0 border-0 bg-transparent text-decoration-none link" id="show-more-friends-button" type="button" data-bs-toggle="collapse" data-bs-target="#morefriends" aria-expanded="false" aria-controls="collapseOne" onclick="toggleSeeFriendsButton();">
+                                            <p class="d-inline">Show More Friends</p>
+                                            <i class="bi bi-chevron-down"></i>
+                                        </a>
+                                    </div>
+                                    <div id="morefriends" class="accordion-collapse collapse">
+                                        <div class="accordion-body p-0">
+                                            {% for friend in all_user|slice:"5:" %}
+                                                <div class="friend-block d-flex flex-row align-items-center my-2" id="friend-{{friend.id}}">
+                                                    {% if friend.profile_pic != ""%}
+                                                        {% with "https://iili.io/"|add:friend.profile_pic as img_url %}
+                                                            <img src="{{img_url}}" class="d-block me-3" alt-text="profile-image-{{friend.profile_pic}}"
+                                                                width="50px" height="50px" />
+                                                        {% endwith %}
+                                                    {% else %}
+                                                        <img src="https://iili.io/yhRgWb.md.png" class="d-block me-3" alt-text="profile-image-{{friend.profile_pic}}"
+                                                        width="50px" height="50px" />
+                                                    {% endif %}
+                                                    <a href="{% url 'friendpage' friend.get_username %}" class="d-block text-decoration-none link">
+                                                        {{friend.get_username}}
+                                                    </a>
+                                                </div>
+                                            {%endfor%}
+
+                                        </div>
+
+                                    </div>
+                                <div>
+                            </div>
+                        {% endif%}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

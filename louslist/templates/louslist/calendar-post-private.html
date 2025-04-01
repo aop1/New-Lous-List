@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block head_title %} Unauthorized Schedule Access {% endblock %}
+
+{% block content %}
+    <h2>You are not allowed to view this schedule</h2>
+    <p>The owner of this schedule has marked it private.</p>
+    <button class="btn btn-primary align-self-start" onclick="window.open('/social')"> Return to Social Page</button>
+{% endblock %}

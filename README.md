@@ -3,8 +3,6 @@
 ## Description
 New Lou's List application picks up where the old Lou's List left off, implementing the same useful features and building more to help students and faculty 
 manage their schedules. Users can now create an account, search for any classes UVA is offering, and add classes to their cart to create multiple schedules.
-## URL
-<a href="https://newlouslist.herokuapp.com/" target="_blank">New Lou's List Website</a>
 ## Instructions
 ### Sign up
 To start, create a user with your Google login credentials via the button on the top right in the navigation bar.
